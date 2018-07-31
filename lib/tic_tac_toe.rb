@@ -118,14 +118,14 @@ def turn
   end
 end
 
-def play(board)
-  until over?(board)
-    turn(board)
+def play
+  until over?
+    turn
   end
   
-  if won?(board) && winner(board)=="O"
+  if won? && winner=="O"
     puts "Congratulations O!"
-  elsif won?(board) && winner(board)=="X"
+  elsif won? && winner=="X"
     puts "Congratulations X!"  
   else
     puts "Cat's Game!"
