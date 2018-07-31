@@ -18,12 +18,12 @@ def position_taken?(index)
   !(@board[index].nil? || @board[index] == " ")
 end
   
-  def won?(board)
+  def won?
     WIN_COMBINATIONS.each do |win_combo|
       index_one=win_combo[0]
       index_two=win_combo[1]
       index_three=win_combo[2]
-      if ((board[index_one]=="X" && board[index_two]=="X" && board[index_three]=="X") || (board[index_one]=="O" && board[index_two]=="O" && board[index_three]=="O"))
+      if ((@board[index_one]=="X" && @board[index_two]=="X" && @board[index_three]=="X") || (@board[index_one]=="O" && @board[index_two]=="O" && @board[index_three]=="O"))
         return win_combo
       end
     end
