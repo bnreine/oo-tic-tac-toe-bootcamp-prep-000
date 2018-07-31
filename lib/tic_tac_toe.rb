@@ -35,7 +35,7 @@ end
   end
  
 def draw?
-  if (!won? && full?
+  if (!won? && full?)
     return true
   elsif (!won?  && !full?)
     return false
