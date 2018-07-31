@@ -52,9 +52,9 @@ def over?
   end
 end
 
-def winner(board)
-  if won?(board) 
-    if board[won?(board)[0]]=="X"
+def winner
+  if won?
+    if @board[won?[0]]=="X"
       return "X"
     else
       return "O"
