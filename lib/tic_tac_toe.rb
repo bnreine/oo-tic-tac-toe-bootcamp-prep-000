@@ -34,12 +34,12 @@ end
     @board.all? {|element| (element=="X" || element=="O")}
   end
  
-def draw?(board)
-  if (!won?(board) && full?(board))
+def draw?
+  if (!won? && full?
     return true
-  elsif (!won?(board)  && !full?(board))
+  elsif (!won?  && !full?)
     return false
-  elsif won?(board)
+  elsif won?
     return FALSE
   end
 end
